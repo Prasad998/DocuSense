@@ -1,58 +1,81 @@
-# MultiPDF Chat App
+Here’s a polished version of your README rewritten for **DocuSense** with proper structure and flow 👇
 
-> You can find the tutorial for this project on [YouTube](https://youtu.be/dXxQ0LR-3Hg).
+---
 
-## Introduction
-------------
-The MultiPDF Chat App is a Python application that allows you to chat with multiple PDF documents. You can ask questions about the PDFs using natural language, and the application will provide relevant responses based on the content of the documents. This app utilizes a language model to generate accurate answers to your queries. Please note that the app will only respond to questions related to the loaded PDFs.
+# 📘 DocuSense
 
-## How It Works
-------------
+DocuSense is a powerful chat-based application that lets you interact with multiple PDF documents using natural language. Simply upload your PDFs, ask questions, and get intelligent responses generated from the content of your documents.
 
-![MultiPDF Chat App Diagram](./docs/PDF-LangChain.jpg)
+This project leverages modern language models to extract, process, and provide accurate answers, ensuring that your queries remain contextual to the loaded PDFs.
 
-The application follows these steps to provide responses to your questions:
+---
 
-1. PDF Loading: The app reads multiple PDF documents and extracts their text content.
+## 🚀 Features
 
-2. Text Chunking: The extracted text is divided into smaller chunks that can be processed effectively.
+* 📂 Upload and chat with multiple PDFs simultaneously.
+* 🔍 Get context-aware answers based on document content.
+* ⚡ Efficient text chunking for better processing.
+* 🧠 Embedding-based similarity matching to ensure relevant responses.
+* 🌐 Streamlit-based UI for easy interaction.
 
-3. Language Model: The application utilizes a language model to generate vector representations (embeddings) of the text chunks.
+---
 
-4. Similarity Matching: When you ask a question, the app compares it with the text chunks and identifies the most semantically similar ones.
+## 🛠 How It Works
 
-5. Response Generation: The selected chunks are passed to the language model, which generates a response based on the relevant content of the PDFs.
+The workflow of **DocuSense** can be summarized in these steps:
 
-## Dependencies and Installation
-----------------------------
-To install the MultiPDF Chat App, please follow these steps:
+1. **PDF Loading** – Extracts text content from multiple uploaded PDFs.
+2. **Text Chunking** – Breaks down extracted text into smaller, manageable chunks.
+3. **Embeddings Generation** – Creates vector representations of text chunks using a language model.
+4. **Similarity Matching** – Matches your query with the most semantically similar text chunks.
+5. **Response Generation** – Passes relevant chunks to the language model to generate precise answers.
 
-1. Clone the repository to your local machine.
+![DocuSense Workflow](./docs/PDF-LangChain.jpg)
 
-2. Install the required dependencies by running the following command:
+---
+
+## 📦 Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Prasad998/DocuSense.git
+   cd DocuSense
    ```
+
+2. Install dependencies:
+
+   ```bash
    pip install -r requirements.txt
    ```
 
-3. Obtain an API key from OpenAI and add it to the `.env` file in the project directory.
-```commandline
-OPENAI_API_KEY=your_secrit_api_key
-```
+3. Add your OpenAI API key to a `.env` file in the project root:
 
-## Usage
------
-To use the MultiPDF Chat App, follow these steps:
-
-1. Ensure that you have installed the required dependencies and added the OpenAI API key to the `.env` file.
-
-2. Run the `main.py` file using the Streamlit CLI. Execute the following command:
+   ```env
+   OPENAI_API_KEY=your_secret_api_key
    ```
+
+---
+
+## ▶️ Usage
+
+1. Ensure dependencies are installed and your API key is set up in `.env`.
+2. Start the app using Streamlit:
+
+   ```bash
    streamlit run app.py
    ```
+3. The interface will open in your default browser.
+4. Upload one or more PDFs.
+5. Ask natural language questions about your documents via the chat interface.
 
-3. The application will launch in your default web browser, displaying the user interface.
+---
 
-4. Load multiple PDF documents into the app by following the provided instructions.
+## 📌 Notes
 
-5. Ask questions in natural language about the loaded PDFs using the chat interface.
+* The app only responds to queries related to the content of the loaded PDFs.
+* Make sure your OpenAI API key has sufficient credits/permissions.
 
+---
+
+Would you like me to also add **badges (e.g., Python version, Streamlit, License)** and a **"Contributing" section** to make it look more professional for GitHub?
