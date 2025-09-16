@@ -1,6 +1,3 @@
-Here’s a polished version of your README rewritten for **DocuSense** with proper structure and flow 👇
-
----
 
 # 📘 DocuSense
 
@@ -77,5 +74,3 @@ The workflow of **DocuSense** can be summarized in these steps:
 * Make sure your OpenAI API key has sufficient credits/permissions.
 
 ---
-
-Would you like me to also add **badges (e.g., Python version, Streamlit, License)** and a **"Contributing" section** to make it look more professional for GitHub?
